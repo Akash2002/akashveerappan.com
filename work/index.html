@@ -8,9 +8,8 @@
     </head>
 
     <script>
-        function onShush(value) {
-            console.log(value);
-            alert("test");
+        function onShush(element) {
+            console.log(element.id);
             window.location = "https://play.google.com/store/apps/details?id=shush.android.app&hl=en_US";
         }
         
@@ -23,7 +22,7 @@
         <div class="container-fluid">
             <div class="row">
               <div class="col-6">
-                  <div value = "test" onclick = "onShush(this.value)" class = "contents">
+                  <div id = "shushhh" onclick = "onShush(this)" class = "contents">
                     <h1>Shushhh</h1>
                     <hr>
                     <p>Schedule ringer mode based on time and/or location</p>
