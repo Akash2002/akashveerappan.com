@@ -8,7 +8,8 @@
     </head>
 
     <script>
-        function onShush() {
+        function onShush(value) {
+            console.log(value);
             window.location = "https://play.google.com/store/apps/details?id=shush.android.app&hl=en_US";
         }
     </script>
@@ -20,7 +21,7 @@
         <div class="container-fluid">
             <div class="row">
               <div class="col-6">
-                  <div onclick = "onShush()" class = "contents">
+                  <div value = "test" onclick = "onShush(this.value)" class = "contents">
                     <h1>Shushhh</h1>
                     <hr>
                     <p>Schedule ringer mode based on time and/or location</p>
@@ -28,7 +29,7 @@
               </div>
 
                 <div class="col-4">
-                    <div class = "contents">
+                    <div onclick = "onGHBuddies()" class = "contents">
                         <h1>GHBuddies</h1>
                         <hr>
                         <p>Platform to help GHP students buddy up after 7PM curfew time for walking outdoors</p>
@@ -40,14 +41,14 @@
 
             <div class = "row">
                 <div class = "col-4">
-                    <div class = "contents">
+                    <div onclick = "onGHBuddies()" class = "contents">
                         <h1>Smart Car Parking</h1>
                         <hr>
                         <p>An IoT dashboard to get notified about the vacancy of parking slots</p>
                     </div>
                 </div>
                 <div class = "col-6">
-                    <div class = "contents">
+                    <div onclick = "onGHBuddies()" class = "contents">
                         <h1>A-T-A-T</h1>
                         <hr>
                         <p>All Terrain Accessibility Transport - A custom wheelchair implement to aid rough terrain and stair navigation</p>
@@ -56,7 +57,7 @@
             </div>
 
             <div class="row">
-                  <div class="col-6">
+                  <div onclick = "onGHBuddies()" class="col-6">
                       <div class = "contents">
                       <h1>CloudFolio</h1>
                       <hr>
@@ -65,7 +66,7 @@
                   </div>
   
                   <div class="col-4">
-                      <div class = "contents">
+                      <div onclick = "onGHBuddies()" class = "contents">
                         <h1>EcoStay</h1>
                         <hr>
                         <p>A reservation booking platform to promote EcoTourism and environmental awareness</p>
@@ -75,7 +76,7 @@
 
               <div class="row">
                 <div class="col">
-                    <div class = "contents">
+                    <div onclick = "onGHBuddies()" class = "contents">
                       <h1>Smart Brushing Monitor</h1>
                       <hr>
                       <p>An IoT analysis dashboard to monitor brushing patterns and encourage healthy teethcare habits</p>
@@ -83,7 +84,7 @@
                 </div>
   
                   <div class="col">
-                      <div class = "contents">
+                      <div onclick = "onGHBuddies()" class = "contents">
                       <h1>Smart Lights</h1>
                       <hr>
                       <p>An IoT application to toggle lights from anywhere and at anytime at your convenience</p>
@@ -91,7 +92,7 @@
                   </div>
   
                   <div class="col">
-                      <div class = "contents">
+                      <div onclick = "onGHBuddies()" class = "contents">
                         <h1>Latin VoQuiz</h1>
                         <hr>
                         <p>A Latin Quiz App with custom modes to enhance memorization patterns</p>
