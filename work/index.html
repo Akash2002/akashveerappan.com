@@ -8,9 +8,42 @@
     </head>
 
     <script>
-        function onShush(element) {
-            console.log(element.id);
-            //window.location = "https://play.google.com/store/apps/details?id=shush.android.app&hl=en_US";
+        function onClickDiv(element) {
+            switch (element.id) {
+                case "shushhh":
+                    window.location = "https://play.google.com/store/apps/details?id=shush.android.app&hl=en_US";
+                    break;
+                case "ghbuddies":
+                    window.location = "https://github.com/Akash2002/GHBuddies";
+                    break;
+                case "smartcarparking":
+                    window.location = "https://github.com/Akash2002/Smart-Parking-System";
+                    break;
+                case "atat":
+                    window.location = "https://github.com/Akash2002/LemelsonMIT";
+                    break;
+                case "cloudfolio":
+                    window.location = "https://github.com/Akash2002/CloudFolio";
+                    break;
+                case "coachcollab":
+                    window.location = "https://github.com/Akash2002/CoachCollab";
+                    break;
+                case "ecostay":
+                    window.location = "https://github.com/Akash2002/EcoStay";
+                    break;
+                case "smartbrushingmonitor":
+                    window.location = "https://github.com/Akash2002/Smart-Brushing-System";
+                    break;
+                case "smartlights":
+                    window.location = "https://github.com/Akash2002/Smart-Lights";
+                    break;
+                case "latinvoquiz":
+                    window.location = "https://github.com/Akash2002/sermo-quaestio";
+                    break;
+                default:
+                    window.location = "https://play.google.com/store/apps/details?id=shush.android.app&hl=en_US";
+                    break;
+            }
         }
         
     </script>
@@ -22,7 +55,7 @@
         <div class="container-fluid">
             <div class="row">
               <div class="col-6">
-                  <div id = "shushhh" onclick = "onShush(this)" class = "contents">
+                  <div id = "shushhh" onclick = "onClickDiv(this)" class = "contents">
                     <h1>Shushhh</h1>
                     <hr>
                     <p>Schedule ringer mode based on time and/or location</p>
@@ -30,7 +63,7 @@
               </div>
 
                 <div class="col-4">
-                    <div onclick = "onGHBuddies()" class = "contents">
+                    <div id = "ghbuddies" onclick = "onClickDiv(this)" class = "contents">
                         <h1>GHBuddies</h1>
                         <hr>
                         <p>Platform to help GHP students buddy up after 7PM curfew time for walking outdoors</p>
@@ -42,14 +75,14 @@
 
             <div class = "row">
                 <div class = "col-4">
-                    <div onclick = "onGHBuddies()" class = "contents">
+                    <div id = "smartcarparking" onclick = "onClickDiv(this)" class = "contents">
                         <h1>Smart Car Parking</h1>
                         <hr>
                         <p>An IoT dashboard to get notified about the vacancy of parking slots</p>
                     </div>
                 </div>
                 <div class = "col-6">
-                    <div onclick = "onGHBuddies()" class = "contents">
+                    <div id = "atat" onclick = "onClickDiv(this)" class = "contents">
                         <h1>A-T-A-T</h1>
                         <hr>
                         <p>All Terrain Accessibility Transport - A custom wheelchair implement to aid rough terrain and stair navigation</p>
@@ -58,16 +91,24 @@
             </div>
 
             <div class="row">
-                  <div onclick = "onGHBuddies()" class="col-6">
-                      <div class = "contents">
-                      <h1>CloudFolio</h1>
-                      <hr>
-                      <p>An online library platform to assist library management systems</p>
+                  <div onclick = "onClickDiv(this)" class="col">
+                      <div id = "cloudfolio" class = "contents">
+                        <h1>CloudFolio</h1>
+                        <hr>
+                        <p>An online library platform to assist library management systems</p>
                       </div>
                   </div>
+
+                  <div class="col">
+                    <div id = "coachcollab" onclick = "onClickDiv(this)" class = "contents">
+                      <h1>CoachCollab</h1>
+                      <hr>
+                      <p>A realtime education platform that promotes free teaching to address lack of education concerns in growing countries</p>
+                    </div>
+                </div>
   
-                  <div class="col-4">
-                      <div onclick = "onGHBuddies()" class = "contents">
+                  <div class="col">
+                      <div id = "ecostay" onclick = "onClickDiv(this)" class = "contents">
                         <h1>EcoStay</h1>
                         <hr>
                         <p>A reservation booking platform to promote EcoTourism and environmental awareness</p>
@@ -77,7 +118,7 @@
 
               <div class="row">
                 <div class="col">
-                    <div onclick = "onGHBuddies()" class = "contents">
+                    <div id = "smartbrushingmonitor" onclick = "onClickDiv(this)" class = "contents">
                       <h1>Smart Brushing Monitor</h1>
                       <hr>
                       <p>An IoT analysis dashboard to monitor brushing patterns and encourage healthy teethcare habits</p>
@@ -85,7 +126,7 @@
                 </div>
   
                   <div class="col">
-                      <div onclick = "onGHBuddies()" class = "contents">
+                      <div id = "smartlights" onclick = "onClickDiv(this)" class = "contents">
                       <h1>Smart Lights</h1>
                       <hr>
                       <p>An IoT application to toggle lights from anywhere and at anytime at your convenience</p>
@@ -93,7 +134,7 @@
                   </div>
   
                   <div class="col">
-                      <div onclick = "onGHBuddies()" class = "contents">
+                      <div id = "latinvoquiz" onclick = "onClickDiv(this)" class = "contents">
                         <h1>Latin VoQuiz</h1>
                         <hr>
                         <p>A Latin Quiz App with custom modes to enhance memorization patterns</p>
